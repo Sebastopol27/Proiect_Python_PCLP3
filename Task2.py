@@ -35,7 +35,7 @@ print(f"Barbati: {pr_barbati:.2f}%\nFemei: {pr_femei:.2f}%")
 fig, graf = plt.subplots(1, 3, figsize=(20, 5))
 
 # Grafic pentru supraviețuire
-graf[0].pie([pr_vii, pr_morti], labels=['Au supraviețuit', 'Nu au supraviețuit'], autopct='%1.1f%%', colors=['blue','red'])
+graf[0].pie([pr_vii, pr_morti], labels=['Au supraviețuit', 'Nu au supraviețuit'], autopct='%1.2f%%', colors=['blue','red'])
 graf[0].set_title('Procentul persoanelor care au supraviețuit')
 
 # Grafic pentru clase
@@ -44,8 +44,8 @@ graf[1].set_ylabel('Procent')
 graf[1].set_title('Procentul pasagerilor pentru fiecare clasă')
 
 # Grafic pentru gen
-graf[2].pie([pr_barbati, pr_femei], labels=['Bărbați', 'Femei'], autopct='%1.1f%%', colors=['blue','red'])
+graf[2].pie([pr_barbati, pr_femei], labels=['Bărbați', 'Femei'], autopct='%1.2f%%', colors=['blue','red'])
 graf[2].set_title('Procentul bărbaților și femeilor')
 
 plt.tight_layout()
-plt.savefig(f'Task2.png')
+plt.savefig('Task2.png')

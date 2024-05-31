@@ -14,6 +14,6 @@ for coloana in coloana_numerica:
     plt.title(f'Histograma pentru coloana "{coloana}"')
     plt.xlabel('Valoare')
     plt.ylabel('Număr de exemple')
-    plt.grid(True)
+    #plt.grid(True)
     plt.tight_layout()
-    plt.savefig(f'output{coloana}.png')
+    plt.savefig(f'Task3{coloana}.png')
