@@ -15,4 +15,5 @@ for coloana in coloana_numerica:
     plt.xlabel('Valoare')
     plt.ylabel('Număr de exemple')
     plt.grid(True)
-    plt.show()
+    plt.tight_layout()
+    plt.savefig(f'output{coloana}.png')

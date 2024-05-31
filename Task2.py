@@ -48,4 +48,4 @@ graf[2].pie([pr_barbati, pr_femei], labels=['Bărbați', 'Femei'], autopct='%1.1
 graf[2].set_title('Procentul bărbaților și femeilor')
 
 plt.tight_layout()
-plt.show()
+plt.savefig(f'Task2.png')

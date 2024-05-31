@@ -27,5 +27,5 @@ ax.set_xlabel('Categorie de vârstă')
 ax.set_ylabel('Numărul de pasageri')
 ax.set_title('Numărul de pasageri pentru fiecare categorie de vârstă')
 plt.xticks(rotation=0)
-plt.show()
-
+plt.tight_layout()
+plt.savefig('Task5.png')
